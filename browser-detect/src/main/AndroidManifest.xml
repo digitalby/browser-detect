@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <queries>
+        <!-- Tier 1: anything that self-declares as a web URL handler. -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="http" />
+        </intent>
+
+        <!-- Tier 2: per-package fallback for browsers that do not register http
+             intent filters or that ship with constrained filters. Keep in sync
+             with BrowserCatalog.entries. -->
+        <package android:name="com.android.chrome" />
+        <package android:name="com.chrome.beta" />
+        <package android:name="com.chrome.dev" />
+        <package android:name="com.chrome.canary" />
+        <package android:name="org.mozilla.firefox" />
+        <package android:name="org.mozilla.firefox_beta" />
+        <package android:name="org.mozilla.fenix" />
+        <package android:name="org.mozilla.focus" />
+        <package android:name="org.mozilla.fennec_fdroid" />
+        <package android:name="com.microsoft.emmx" />
+        <package android:name="com.brave.browser" />
+        <package android:name="com.opera.browser" />
+        <package android:name="com.opera.gx" />
+        <package android:name="com.opera.mini.native" />
+        <package android:name="com.sec.android.app.sbrowser" />
+        <package android:name="com.duckduckgo.mobile.android" />
+        <package android:name="com.vivaldi.browser" />
+        <package android:name="org.torproject.torbrowser" />
+        <package android:name="com.kiwibrowser.browser" />
+        <package android:name="com.ecosia.android" />
+        <package android:name="us.spotco.fennec_dos" />
+        <package android:name="us.spotco.mulch" />
+        <package android:name="org.bromite.bromite" />
+        <package android:name="org.cromite.cromite" />
+        <package android:name="io.github.forkmaintainers.iceraven" />
+        <package android:name="org.ironfoxoss.ironfox" />
+        <package android:name="acr.browser.lightning" />
+        <package android:name="com.stoutner.privacybrowser.standard" />
+        <package android:name="com.ghostery.android.ghostery" />
+        <package android:name="com.yandex.browser" />
+        <package android:name="com.yandex.browser.lite" />
+        <package android:name="com.UCMobile.intl" />
+        <package android:name="com.uc.browser.en" />
+        <package android:name="com.tencent.mtt" />
+        <package android:name="com.baidu.browser.apps" />
+        <package android:name="com.quark.browser" />
+        <package android:name="mark.via.gp" />
+        <package android:name="by.orbita.browser" />
+        <package android:name="cz.seznam.sbrowser" />
+        <package android:name="com.alohamobile.browser" />
+        <package android:name="com.cloudmosa.puffinFree" />
+        <package android:name="mobi.mgeek.TunnyBrowser" />
+        <package android:name="com.mx.browser" />
+        <package android:name="com.ksmobile.cb" />
+    </queries>
+</manifest>
