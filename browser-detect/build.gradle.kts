@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "me.digitalby.browserdetect"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         minSdk = 24

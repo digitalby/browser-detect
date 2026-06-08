@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "me.digitalby.browserdetect.sample"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "me.digitalby.browserdetect.sample"
